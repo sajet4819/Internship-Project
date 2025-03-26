@@ -1,0 +1,63 @@
+/* Default Light Mode */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+  }
+  
+  .navbar, .card, .container, h2, h4, p, span {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Navbar Dark Mode */
+  body.dark-mode .navbar {
+    background-color: #222 !important;
+  }
+  
+  /* Card Dark Mode */
+  body.dark-mode .card {
+    background-color: #1e1e1e !important;
+    border: 1px solid #333 !important;
+    color: #ffffff !important;
+  }
+  
+  /* Ensure text is visible in both modes */
+  body.dark-mode h2, 
+  body.dark-mode h4, 
+  body.dark-mode p, 
+  body.dark-mode span, 
+  body.dark-mode .task-list, 
+  body.dark-mode .weather-widget {
+    color: #ffffff !important;
+  }
+  
+  body.light-mode h2, 
+  body.light-mode h4, 
+  body.light-mode p, 
+  body.light-mode span, 
+  body.light-mode .task-list, 
+  body.light-mode .weather-widget {
+    color: #000000 !important;
+  }
+  
+  /* Buttons Dark Mode */
+  body.dark-mode .btn {
+    border-color: #ffffff !important;
+  }
+  
+  body.dark-mode .btn-outline-light {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  
+  body.dark-mode .btn-outline-light:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  
